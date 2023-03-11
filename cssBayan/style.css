@@ -4,3 +4,24 @@
     box-sizing: border-box;
     border: 0;
 }
+body{
+    background-color: #5e5749;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #cdcdb3;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px; 
+    padding: 0 15px;
+}
+.bayan{
+    max-width: 600px;
+    margin: 20px auto ;
+}
+.bayan__item{
+    border: 2px solid #cdcdb3;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
