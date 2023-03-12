@@ -4,7 +4,6 @@
     box-sizing: border-box;
     border: 0;
 }
-
 body{
     background-color: #5e5749;
     font-family: 'Raleway', sans-serif;
@@ -12,19 +11,18 @@ body{
     color: #cdcdb3;
 }
 .bayan{
-    max-width: 600px;
-    margin: 20px auto ;
-    max-height: 30px;
+    max-width: 60rem;
+    margin: 2rem auto ;
 }
 .bayan__item{
     border: 2px solid #cdcdb3;
-    border-radius: 10px;
+    border-radius: 1em;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 .bayan:hover{
     color: #f7db4c;
-    max-width: 650px;
+    max-width: 65rem;
     transition: .2s ease-out;
     max-height: 40px;
     font-size: 18px;
@@ -32,23 +30,13 @@ body{
 .bayan__item-title{
     display:block;
     font-weight: 600;
-    padding:10px 15px;
+    padding: 0.5em 1em;
     transition: background .2s ease-out;
     cursor: pointer;
     position: relative;
 }
 .bayan__item-title:hover::after{
-    content: '';
-    display: block;
     background-image: url(./img/arrow-down-hover.png);
-    background-repeat: round;
-
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%) ;
 }
 .bayan__item-title::after{
     content: '';
@@ -94,7 +82,7 @@ body{
     display: none;
 }
 img{
-    width: 300px;
-    height: 300px;
-    padding: 10px;
+    max-width: 20em;
+    max-height: 20em;
+    padding: 1em;
 }
