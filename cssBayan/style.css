@@ -11,7 +11,7 @@ body{
     color: #cdcdb3;
 }
 .bayan{
-    max-width: 60rem;
+    max-width: 30rem;
     margin: 2rem auto ;
 }
 .bayan__item{
@@ -22,9 +22,8 @@ body{
 }
 .bayan:hover{
     color: #f7db4c;
-    max-width: 65rem;
+    max-width: 35rem;
     transition: .2s ease-out;
-    max-height: 40px;
     font-size: 18px;
 }
 .bayan__item-title{
@@ -66,7 +65,7 @@ body{
 .bayan__item-input:checked ~ .bayan__item-title {
     background-color: #f7db4c;
     color: #5e5749;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 .bayan__item-input {
     display: block;
