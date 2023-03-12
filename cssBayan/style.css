@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    background-color: #5e5749;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #cdcdb3;
+}
+.bayan{
+    max-width: 60rem;
+    margin: 2rem auto ;
+}
+.bayan__item{
+    border: 2px solid #cdcdb3;
+    border-radius: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+.bayan:hover{
+    color: #f7db4c;
+    max-width: 65rem;
+    transition: .2s ease-out;
+    font-size: 28px;
+}
+.bayan__item-title{
+    display:block;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    transition: background .2s ease-out;
+    cursor: pointer;
+    position: relative;
+}
+.bayan__item-title:hover::after{
+    background-image: url(./img/arrow-down-hover.png);
+}
+.bayan__item-title::after{
+    content: '';
+    display: block;
+    background-image: url(./img/arrow-down-normal.png);
+    background-repeat: round;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) ;
+}
+.bayan__item-input:checked ~ .bayan__item-title::after{
+    content: '';
+    display: block;
+    background-image: url(./img/arrow-up-normal.png);
+    background-repeat: round;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) ;
+}
+.bayan__item-title:hover ,
+.bayan__item-input:checked ~ .bayan__item-title {
+    background-color: #f7db4c;
+    color: #5e5749;
+    border-radius: 12px;
+}
+.bayan__item-input {
+    display: block;
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+.bayan__item-input:checked ~ .bayan__item-img {
+    display: block;
+    text-align: center;
+}
+.bayan__item-img{
+    display: none;
+}
+img{
+    max-width: 20em;
+    max-height: 20em;
+    padding: 1em;
+}
