@@ -33,12 +33,52 @@ body{
     max-height: 40px;
     font-size: 18px;
 }
+.bayan__item-title:hover::after{
+    content: '';
+    display: block;
+    background-image: url(./img/arrow-down-hover.png);
+    background-repeat: round;
+
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) ;
+}
 .bayan__item-title{
     display:block;
     font-weight: 600;
     padding:10px 15px;
     transition: background .2s ease-out;
     cursor: pointer;
+
+    position: relative;
+}
+.bayan__item-title::after{
+    content: '';
+    display: block;
+    background-image: url(./img/arrow-down-normal.png);
+    background-repeat: round;
+
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) ;
+}
+.bayan__item-input:checked ~ .bayan__item-title::after{
+    content: '';
+    display: block;
+    background-image: url(./img/arrow-up-normal.png);
+    background-repeat: round;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) ;
 }
 .bayan__item-title:hover ,
 .bayan__item-input:checked ~ .bayan__item-title {
