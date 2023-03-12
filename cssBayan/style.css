@@ -7,11 +7,11 @@
 body{
     background-color: #5e5749;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 25px;
     color: #cdcdb3;
 }
 .bayan{
-    max-width: 30rem;
+    max-width: 60rem;
     margin: 2rem auto ;
 }
 .bayan__item{
@@ -22,9 +22,9 @@ body{
 }
 .bayan:hover{
     color: #f7db4c;
-    max-width: 35rem;
+    max-width: 65rem;
     transition: .2s ease-out;
-    font-size: 18px;
+    font-size: 28px;
 }
 .bayan__item-title{
     display:block;
